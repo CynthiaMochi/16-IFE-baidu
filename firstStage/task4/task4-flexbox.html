@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>1-task4定位和居中</title>
+	<style type="text/css">
+    *{
+    	padding:0;
+    	margin:0;
+    	height: 100%;
+    }
+    a{
+      text-decoration: none;
+      cursor: pointer;
+    }
+    ul{
+      overflow: hidden;
+      position: absolute;
+    }
+    ul>li{
+      width: 120px;
+      height: 30px;
+      text-align: center;
+      background: #ddd;
+      float: left;
+      list-style: none;
+      margin-left: 10px;
+       cursor: pointer;
+    }
+    #wrap{
+    	display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    .grey{
+       width: 400px;
+       height: 200px;
+       background: #ccc;
+    
+    position: relative;
+      
+   
+    }
+    .grey p{
+    	text-align: center;
+       line-height: 200px;
+       height: 200px;
+
+    }
+  
+.yellow{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background: #fc0;
+    }
+    [data-pos="left"]{
+        left: 0;
+        top: 0;
+        border-radius: 0 0 50px 0;
+    }
+    [data-pos="right"]{
+     right: 0;
+        bottom: 0;
+        border-radius:  50px 0 0 0;
+    }
+	</style>
+</head>
+<body>
+<ul>
+  <li><a href="task4-flexbox.html">flexbox居中</a></li>
+  <li><a href="task4-table.html">table居中</a></li>
+  <li><a href="task4-position.html">position居中</a></li>
+</ul>
+<div id="wrap"> 
+   
+   <div class="grey">
+   <div class="yellow" data-pos='left'></div>
+    <div class="yellow" data-pos='right'></div>
+   <p>flexbox居中</p>
+   
+   	
+
+   </div>
+  
+</div>
+</body>
+</html>

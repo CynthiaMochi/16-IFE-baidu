@@ -1,0 +1,136 @@
+*{
+    	padding: 0px;
+    	margin: 0px;
+    }
+    div{
+     width: 300px;
+    height: 300px;
+}
+   
+    
+#line-color th{
+    background: yellow;
+}
+#line-color tr:nth-child(odd){
+    background: #ddd;
+}
+#line-color tr:nth-of-type(-n+4){
+    background: blue;
+}
+#input-change input{
+    width: 100px;
+    height: 30px;
+    margin: 50px auto;
+    display: block;
+    }
+#input-change input:focus{
+    border: red 4px solid;
+    width: 200px;
+    height: 50px;
+    animation:widthchange 5s;
+   
+}
+ #banner{ 
+  width: 200px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+   text-align: center;
+   margin: 20px;
+ } 
+
+ul.pic{
+
+    width: 100%;
+  }
+#banner nav{
+  z-index: 10;
+    right: 0px;
+   bottom: 0;
+   position: absolute;
+
+   overflow: hidden;
+  }
+.pic>li{
+   width: 200px;
+   height: 100px;
+   position: absolute;
+   list-style: none;
+    left: 0px;
+    top: 0;
+    
+
+ }
+
+
+ul.pic li:target{
+   -webkit-animation: slide 500ms linear;
+   z-index: 2;
+ 
+ }
+#banner nav>a{
+    width: 30px;
+    height: 30px;
+    background: #aaa;
+    margin-left: 5px;
+    float: left;
+    opacity: 0.7;
+}
+
+#button-roll>button{
+        width: 100px;
+        height: 50px;
+        background: red;
+        margin: 50px auto;
+       display: block;
+    }
+ #button-roll>button:hover{
+    	width: 100px;
+    	height: 50px;
+    	background: red;
+    	 
+        -webkit-animation:roll 1s linear ;
+    }
+ @-webkit-keyframes widthchange{
+    0%{    width: 100px;
+            height: 30px; 
+            
+          }
+        
+       
+        100%{
+            width: 200px;
+            height: 50px;
+            
+        }
+ }
+
+ @-webkit-keyframes slide {
+  0% { left:-100%;}
+ 
+
+  
+  100% {left:0%;}
+}
+ 
+ @-webkit-keyframes roll{
+    	0%{ width: 100px;
+    	    height: 50px; 
+    	    background: red;
+          transform:rotate(0deg);
+    	  }
+    	
+    	50%{
+            width: 250px;
+            height: 75px;
+            background: green;
+             transform:rotate(60deg);
+
+    	100%{
+    		width: 100px;
+    		height: 50px;
+    		background: red;
+             transform:rotate(0deg);
+    	}
+    }
+
