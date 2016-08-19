@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <meta charset="utf-8">
+ 	<title>task19</title>
+ 	<style type="text/css">
+         *{
+         	padding: 0;
+         	margin: 0;
+         }
+         #wrap{
+         	margin: 50px auto;
+          width: 800px;
+         
+         
+         }
+         #line{
+       display: flex;
+       align-items: flex-end;
+     
+       height: 400px;
+       margin-top: 20px;
+       border: #ddd 1px solid;
+         }
+         #btns{
+          margin-top: 20px;
+         }
+         .box{
+         	width: 15px;
+      
+         	background: #458897;
+          display: inline-block;
+          margin-right: 5px;
+     
+         }
+         button{
+         	width: 80px;
+         	height: 20px;
+         	border: 1px #aaa solid;
+         }
+ 	</style>
+ </head>
+ <body>
+ <div id="wrap">
+ 	
+   <input type="text" id="dig"  ></input>
+   <div id="btns">
+   	<button data-dir='left-in' type="button">左侧入</button>
+ <button data-dir='right-in' type="button">右侧入</button>
+ <button data-dir='left-out' type="button">左侧出</button>
+ <button data-dir='right-out' type="button">右侧出</button>
+ <button data-dir='orderby'>排序</button>
+   </div>
+ 
+ <section id="line">
+ 	
+</section>
+
+
+ </div>
+ <script type="text/javascript" src="script.js"></script>
+ </body>
+ </html>

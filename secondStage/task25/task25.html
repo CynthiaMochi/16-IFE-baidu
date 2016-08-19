@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tree</title>
+	<style type="text/css">
+       #wrap{
+       	width:800px;
+       	margin: 10px auto;
+       }
+       div.node{
+       	position: relative;
+        margin-left: 20px;
+       }
+       .chose{
+       	color: blue;
+       }
+       .title{
+       	color: #ee6734;
+       	margin-right:5px; 
+       	cursor: pointer;
+       }
+        label.node-header{
+        	
+        }
+
+       .arrow-down::before{
+          content: "";
+       	  position: absolute;
+       	  left: -15px;
+       	  top:5px;
+          width: 0;
+          height: 0;
+          border-top:10px solid #ee6734;
+          border-right: 5px solid transparent;
+          border-left:5px solid transparent;  
+       }
+       .arrow-right::before{
+       	  content: "";
+       	  position: absolute;
+       	  left: -15px;
+       	  top:5px;
+          height: 0;
+          border-top:5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-left:10px solid #ee6734;  
+       }
+       .add{
+       	margin: 10px;
+       	cursor: pointer;
+       }
+       .remove{
+       	cursor: pointer;
+       }
+	</style>
+</head>
+<body>
+<div id="wrap">
+     <fieldset class="treeComponent">
+     <legend>树形组件</legend>
+     <label for="searchText"></label><input id="searchText" value="CSS" type="text"/>
+     <button type="button" class="searchbtn">搜索</button>
+     <button type="button" class="clearbtn">清除</button>
+     <p class="result"></p>
+      <div id="root" class="node">
+        
+		     <label class="node-header">				
+				<span class="title">前端开发树</span>
+				<span class="add">+</span>
+		    </label>
+		   
+	  </div>
+     </fieldset>
+
+
+</div>
+<script type="text/javascript" src="task25.js"></script>
+</body>
+</html>

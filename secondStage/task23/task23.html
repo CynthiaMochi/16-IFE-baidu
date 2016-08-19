@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style type="text/css">
+     div{
+     	display: flex;
+     	justify-content: center;
+     	align-items: center;
+       width: 90%;
+       height: 90%;
+       border: 1px solid blue;
+       margin: 10px;
+       background-color: #fff;
+/*        要设置子元素背景
+      */     }
+     .root{
+     	height: 300px;
+     	min-width: 1200px;
+     	margin: 100px auto;
+     }
+
+	</style>
+	<title>task23</title>
+</head>
+<body>
+<div class="root">supper
+	<div>Cat
+	<div>Apple
+			<div>Pear</div>
+			<div>Pig</div>
+			<div>Cola</div>
+			<div>Soccer</div>
+		</div>
+		<div>Phone</div>
+		<div>Song
+			<div>Book</div>
+			<div>School</div>
+		</div>
+	</div>	
+	<div>Note
+		<div>Human
+			<div>Code</div>
+			<div>Operate</div>
+			<div>Man</div>
+		</div>
+		<div>Program
+			<div>Bement
+				<div>Nose</div>
+			</div>
+			<div>Glass</div>
+		</div>
+	</div>
+	<div>Fish</div>
+</div>
+<div class="control">
+	<button type="button" class="deep">深度先序遍历</button>
+
+	<button type="button" class="broad">广度遍历</button>
+	<input id="search" />
+    <button type="button" class="deepSearch">深度查找</button>
+
+	<button type="button" class="broadSearch">广度查找</button>
+</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
