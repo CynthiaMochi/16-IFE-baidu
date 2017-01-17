@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style>
+        #wrap {
+            width: 800px;
+            margin: 0px auto;
+        }
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        thead td {
+            background: #768A59;
+            color: #fff;
+        }
+        td {
+            min-width: 100px;
+            min-height: 40px;
+            border: 1px solid black;
+        }
+        .des, .aes {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent; 
+            border-right: 5px solid transparent; 
+            cursor: pointer;
+        }
+        .des {
+            border-top: 10px solid #fff;
+
+        }
+        .aes {
+            border-bottom: 10px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <table id="sortTable">
+            <thead>
+                <tr>
+                    <td data-key="name" data-sort=false>姓名</td>
+                    <td data-key="Chinese" data-sort=true>语文<div class="des"></div><div class="aes"></div></td>
+                    <td data-key="Math" data-sort=true>数学<div class="des"></div><div class="aes"></div></td>
+                    <td data-key="English" data-sort=true>英语<div class="des"></div><div class="aes"></div></td>
+                    <td data-key="total" data-sort=true>总分<div class="des"></div><div class="aes"></div></td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script src="../until.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

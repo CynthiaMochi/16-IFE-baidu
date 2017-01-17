@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.date-wrap {
+    width: 250px;
+    margin: 30px auto;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+}
+thead tr:first-child th:hover,
+td:hover {
+    background: #eee;
+}
+
+td,th {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.day.active {
+    background: #27ae60;
+    color:#fff;
+}
+.day.new,
+.day.old {
+    cursor: default;
+    color: #aaa;
+}
+.today {
+    position: relative;
+}
+.today::before {
+    content: " ";
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    border: solid transparent;
+    border-width: 0 0 7px 7px;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+.active.today::before {
+    border-bottom-color: #fff;    
+}

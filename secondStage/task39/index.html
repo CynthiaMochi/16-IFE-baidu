@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style>
+        #wrap {
+            width: 800px;
+            margin: 0px auto;
+        }
+        table {
+            margin: 30px auto 40px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        thead td {
+            color: #fff;
+        }
+        td {
+            min-width: 100px;
+            min-height: 40px;
+            padding: 5px 10px;
+            border: 1px solid black;
+        }
+        .fixed-head {
+            position: fixed;
+            top: 0;
+        }
+        .des, .aes {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent; 
+            border-right: 5px solid transparent; 
+            cursor: pointer;
+        }
+        .des {
+            border-top: 10px solid #fff;
+
+        }
+        .aes {
+            border-bottom: 10px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <table id="sortTable1">
+        </table>
+        <table id="sortTable2">
+        </table>
+    </div>
+
+    <script src="../until.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

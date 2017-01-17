@@ -17,7 +17,23 @@ function addHandler(element,type,handler) {
 	return addHandler(element,type,handler);
 
 }
-
+function removeHandler(element, type, handler) {
+	//移除的handler要和添加时一样
+	if(element.removeEventListener){
+		removeHandler=function(element,type,handler){
+			element.removeEventListener(type,handler,false);
+		}	
+	}
+	else if (element.attachEvent) {
+		removeHandler=function(element,type,handler){
+			element.detachEvent("on"+type,handler);
+		}
+	}
+	else{
+		element["on"+type]="";
+	}
+	return removeHandler(element,type,handler);
+}
 function getTarget(event){
       var event=event||window.event;
 
@@ -54,3 +70,31 @@ function delegateEvent(element,tag,eventName,listener){
 		    }
 	})      
 }
+var $ = function (el, parent) {
+	var parent = parent || document;
+	return parent.querySelector(el);
+}
+var $$ = function (el, parent) {
+	var parent = parent || document;
+	return parent.querySelectorAll(el);
+}
+
+function addClass(dom, newClass) {
+	dom.classList.add(newClass);
+}
+function removeClass(dom, targetClass) {
+	dom.classList.remove(targetClass)
+}
+function beUnique(arr) {
+	var hash = {};
+	var result = [];
+	arr.forEach(function (item) {
+		item = trim(item);
+		if (item && !hash[item]) {
+			hash[item] = true;
+			result.push(item);
+		}
+	})
+	return result;
+}
+

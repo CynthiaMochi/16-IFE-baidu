@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>muti-forms</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <form id="myForm" action="">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="username">名称</label></td>
+                        <td><input id="username" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p id="userNotice" class="notice default">必填,长度为4~16个字符</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="passward">密码</label></td>
+                        <td><input id="password" type="password" maxlength="20"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p id="passwordNotice" class="notice default">必填,由数字和字母组成</p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm">密码确认</label></td>
+                        <td><input id="confirm" type="password" maxlength="20"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p id="confirmNotice" class="notice default"></p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">邮箱</label></td>
+                        <td><input id="email" type="email" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p id="emailNotice" class="notice default"></p></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">手机</label></td>
+                        <td><input id="phone" type="tel" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p id="phoneNotice" class="notice default"></p></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <button type="submit">提交</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="../until.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

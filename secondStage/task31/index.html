@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab-forms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrap {
+            width: 500px;
+            margin: 20px auto;
+        }
+        label {
+            margin-left: 50px;
+        }
+        #identity {
+            margin-left: 80px;
+            margin-bottom: 20px;
+        }
+        input {
+            font-size: 25px;
+            outline: none;
+            border-radius: 3px;
+
+        }
+        select {
+            width: 160px;
+            height: 34px;
+            font-size: 20px;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+        }
+        #workPlace {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        
+        <div id="identity">
+            <label><input name="identity" type="radio" value="student" checked>在校生</label>
+            <label><input name="identity" type="radio" value="no-student" />非在校生</label>
+        </div>
+        <div id="city">
+            <label for="city">学校</label>
+            <select name="city" id="city">
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+            </select>
+            <select name="schools" id="schools">
+                <option value="北京大学">北京大学</option>
+                <option value="北京邮电大学">北京邮电大学</option>
+                <option value="北京师范大学">北京师范大学</option>
+            </select>
+        </div>
+        <div id="workPlace">
+            <label for="city">就业单位</label>
+            <input  />
+        </div>
+    </div>
+
+    <script src="../until.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

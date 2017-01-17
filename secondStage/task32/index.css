@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 10px auto;
+}
+fieldset {
+    width: 400px;
+    min-height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#forDiy fieldset:nth-of-type(n+3) {
+    display: none;
+}
+
+#forDiy [data-chosen=input]~[data-chosen=password]~#limitBox,
+#forDiy [data-chosen=input]~[data-chosen=text]~#limitBox,
+#forDiy [data-chosen=input]~#ruleBox,
+#forDiy [data-chosen=textarea]~#limitBox,
+#forDiy [data-chosen=radio]~#tagBox,
+#forDiy [data-chosen=select]~#tagBox,
+#forDiy [data-chosen=checkbox]~#tagBox {
+    display: block;
+}
+
+button {
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #2b2ca6;
+    color: #fff;
+    background: #2f79ba;
+    cursor: pointer;
+}
+#forDiy {
+    float: left;
+    width: 500px;
+    padding: 20px;
+}
+#forShow {
+    margin-left: 400px;
+}
+.long {
+    width: 300px;
+}
+.short {
+    width: 40px;
+}
+.hide {
+    display: none;
+}
+.tag {
+    display: inline-block;
+    height: 20px;
+    padding: 5px;
+    margin-right: 10px;
+    color: #fff;
+    background: green;
+    text-align: center;
+    cursor: pointer;
+}
+.tag:hover {
+    background: red;
+}
+
+span.warn {
+    color: red;
+}
+span.right {
+    color: green;
+}
+span.default {
+    color: grey;
+}

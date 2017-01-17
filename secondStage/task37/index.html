@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="modal-open">
+<div>
+    <div class="modal fade" id="test">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-bar">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>x</span>
+                    </button>
+                    <h2>this is bar</h2>
+                </div>
+                <div class="modal-body">
+                  <h3>Positioning via CSS</h3>
+                  <p>The affix plugin toggles between three classes, each representing a particular state: <code>.affix</code>, <code>.affix-top</code>, and <code>.affix-bottom</code>. You must provide the styles for these classes yourself (independent of this plugin) to handle the actual positions.</p>
+                  <p>Here's how the affix plugin works:</p>
+                  <ol>
+                    <li>To start, the plugin adds <code>.affix-top</code> to indicate the element is in its top-most position. At this point no CSS positioning is required.</li>
+                    <li>Scrolling past the element you want affixed should trigger the actual affixing. This is where <code>.affix</code> replaces <code>.affix-top</code> and sets <code>position: fixed;</code> (provided by Bootstrap's CSS).</li>
+                    <li>If a bottom offset is defined, scrolling past it should replace <code>.affix</code> with <code>.affix-bottom</code>. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add <code>position: absolute;</code> when necessary. The plugin uses the data attribute or JavaScript option to determine where to position the element from there.</li>
+                  </ol>
+                  <p>Follow the above steps to set your CSS for either of the usage options below.</p>
+
+                  <h3>Via data attributes</h3>
+                  <p>To easily add affix behavior to any element, just add <code>data-spy="affix"</code> to the element you want to spy on. Use offsets to define when to toggle the pinning of an element.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default"  data-dismiss="modal" type="button">close</button>
+                    <button class="btn btn-primary" type="button">save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#test">弹框</button>
+</div>
+<script src="../until.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

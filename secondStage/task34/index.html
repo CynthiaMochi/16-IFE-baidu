@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task33</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        table {
+            position: relative;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        td {
+            box-sizing: border-box;
+            min-width: 50px;
+            height: 50px; 
+            text-align: center;         
+        }
+        td.grid {
+            border: solid #aaa;
+            border-width:1px;
+        }
+        div#box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px; 
+            background: blue;
+            border-right: red 5px solid;
+            transition: 1s all;
+        }
+    </style>
+</head>
+<body>
+    <div id="table">
+        <table>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                    <td class="grid"></td>
+                </tr>
+                <div id="box"></div>
+            </tbody>
+
+        </table>
+        
+        <input id="order" type="text"><button id="execute" type="button">执行</button>
+    </div>
+
+    <script src="../until.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

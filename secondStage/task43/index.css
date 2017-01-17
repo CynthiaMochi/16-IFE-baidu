@@ -1,0 +1,133 @@
+div.album {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 20px;
+}
+.image {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.album-1 > div.image,
+div.album-2 > div.image {
+    width: 100%;
+    height: 100%;
+}
+div.album-2 > div.image:first-child {
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(66.667% 0, 100% 0, 100% 100%, 33.333% 100%);
+    clip-path: polygon(66.667% 0, 100% 0, 100% 100%, 33.333% 100%);
+
+}
+div.album-2 > div.image:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path: polygon(0 0, 66.667% 0, 33.333% 100%, 0% 100%);
+    clip-path: polygon(0 0, 66.667% 0, 33.333% 100%, 0% 100%);
+
+}
+
+div.album-3 > div.image:first-child {
+    top: 0%;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+}
+div.album-3 > div.image:nth-child(2) {
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+}
+div.album-3 > div.image:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+div.album-3 > div.image{
+    width: 50%;
+    height: 50%;
+}
+
+div.album-4 > div.image{
+    width: 50%;
+    height: 50%;
+}
+div.album-4 > div.image:first-child {
+    top: 0%;
+    left: 0%;
+}
+div.album-4 > div.image:nth-child(2) {
+    top: 0%;
+    left: 50%;
+}
+div.album-4 > div.image:nth-child(3) {
+    top: 50%;
+    left: 0%;
+}
+div.album-4 > div.image:nth-child(4) {
+    top: 50%;
+    left: 50%;
+}
+
+div.album-5 > div.image:nth-child(2){
+    top: 0%;
+    left: 66.667%;
+    width: 33.333%;
+    height: 33.333%;
+}
+div.album-5 > div.image:nth-child(3){
+    left: 0%;
+    top: 66.667%;
+    width: 33.333%;
+    height: 33.333%;
+}
+
+div.album-5 > div.image:nth-child(4) {
+    left: 33.333%;
+    top: 66.667%;
+    width: 33.333%;
+    height: 33.333%;
+}
+div.album-5 > div.image:nth-last-child(1){
+    width: 33.333%;
+    height: 66.667%;
+    left: 66.667%;
+    top: 33.333%;
+}
+
+div.album-5 > div.image:first-child,
+div.album-6 > div.image:first-child{
+    top: 0%;
+    left: 0%;
+    width: 66.667%;
+    height: 66.667%;
+}
+div.album-6 > div.image:nth-child(2){
+    top: 0%;
+    left: 66.667%;
+}
+div.album-6 > div.image:nth-child(3){
+    top: 33.333%;
+    left: 66.667%;
+}
+/*统一2-6的宽高*/
+div.album-6 > div.image:nth-last-child(-n+5){
+    width: 33.333%;
+    height: 33.333%;
+}
+div.album-6 > div.image:nth-last-child(-n+3){
+    top: 66.667%;
+}
+div.album-6 > div.image:nth-last-child(2){
+    left: 33.333%;
+}
+div.album-6 > div.image:nth-last-child(1){
+    left: 66.667%;
+}

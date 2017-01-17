@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task33</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .wrap {
+            width: 600px;
+            margin: 20px auto;
+        }
+        #table {
+            position: relative;
+            
+        }
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        td {
+            box-sizing: border-box;
+            min-width: 50px;
+            height: 50px; 
+            text-align: center;         
+        }
+        li {
+            height: 20px;
+            padding: 2px;
+            list-style: none;
+        }
+        span {
+            padding: 2px 5px;
+        }
+        span.warn {
+            background: red;
+            border-radius: 9px;
+        }
+        td {
+            border: solid #aaa;
+            border-width:1px;
+        }
+        td.number {
+            border: none;
+            border-width: 0;
+        }
+        td.block {
+            background: #aaa;
+        }
+        div#box {
+            position: absolute;
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px; 
+            background: blue;
+            border-right: red 5px solid;
+            transition: 1s all;
+        }
+        #command {
+            margin-bottom: 30px;
+        }
+        #commandLine {
+            display: flex;
+            display: -webkit-flex;
+            margin-top: 10px;
+            background: #000;
+    
+        }
+        .line-number {
+            flex-grow: 1;
+            overflow: hidden;
+            height: 100px;
+            background: #aaa;
+            color: #fff;
+        }
+        .line-command {
+            flex-grow: 99;
+            width: 100%;
+            height: 100px;
+            margin-left: 5px;
+            font-size: 18px;
+            line-height: 24px;
+            background: #000;
+            border: 0;
+            color: green;
+            outline: none;
+        }
+        .introduction {
+            border: 1px solid black;
+        }
+        button {
+            padding:2px 5px;
+            border: 1px solid black;
+            background: #fff;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id="table">
+            <div id="box"></div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="number"></td>
+                        <td class="number">1</td>
+                        <td class="number">2</td>
+                        <td class="number">3</td>
+                        <td class="number">4</td>
+                        <td class="number">5</td>
+                        <td class="number">6</td>
+                        <td class="number">7</td>
+                        <td class="number">8</td>
+                        <td class="number">9</td>
+                        <td class="number">10</td>
+                    </tr>
+                    <tr>
+                        <td class="number">1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">7</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">8</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="number">10</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        
+        </div>
+        <div id="command">
+            <button id="execute" type="button">执行</button>
+            <button id="refresh" type="button">refesh</button>
+            <button id="build" type="button">build</button>
+            <div id="commandLine">
+                <ul class="line-number">
+                    <li><span>1</span></li>
+                </ul>
+                <textarea id="order" class="line-command"></textarea>
+
+            </div>
+        </div>
+        <div class="introduction">
+            <ol>
+                <li>在输入框中允许输入如下指令，按下按钮后，使得正方形做相应动作</li>
+                <li>移动不能超出格子空间</li>
+                <li>GO：向蓝色边所面向的方向前进一格（一格等同于正方形的边长</li>
+                <li>TUN LEF：向左转（逆时针旋转90度）</li>
+                <li>TUN RIG：向右转（顺时针旋转90度）</li>
+                <li>TUN BAC：向右转（旋转180度）</li>
+                <li>TRA LEF：向屏幕的左侧移动一格，方向不变</li>
+                <li>TRA TOP：向屏幕的上面移动一格，方向不变</li>
+                <li>TRA RIG：向屏幕的右侧移动一格，方向不变</li>
+                <li>TRA BOT：向屏幕的下面移动一格，方向不变</li>
+                <li>MOV LEF：方向转向屏幕左侧，并向屏幕的左侧移动一格</li>
+                <li>MOV TOP：方向转向屏幕上面，向屏幕的上面移动一格</li>
+                <li>MOV RIG：方向转向屏幕右侧，向屏幕的右侧移动一格</li>
+                <li>MOV BOT：方向转向屏幕下面，向屏幕的下面移动一格</li>
+                <li>GO 3：向当前方向前进三格</li>
+                <li>TRA TOP 2：向屏幕上方平移两格</li>
+                <li>MOV RIG 4：方向转向屏幕右侧，向屏幕的右侧移动四格</li>
+                <li>BUILD：会在当前方块面对的方向前修建一格墙壁</li>
+                <li>BRU color，如果当前方块蓝色边面对方向有紧相邻的墙，则将这个墙颜色改为参数颜色</li>
+            
+            </ol>
+        </div>
+    </div>
+
+    <script src="../until.js"></script>
+    <script src="command.js"></script>
+    <script src="table.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
