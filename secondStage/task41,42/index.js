@@ -165,7 +165,7 @@
                             minDate = minObj;
                             maxDate = maxObj;
 
-                        console.log('选择了'+minDate.timeStr+'到'+maxDate.timeStr)   
+                        alert('选择了'+minDate.timeStr+'到'+maxDate.timeStr)   
                         } else {
                             console.error('选择不在规定范围内')
                         }

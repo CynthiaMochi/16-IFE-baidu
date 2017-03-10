@@ -88,7 +88,7 @@ window.onload=function(){
              if(!nodeName){
              	reset()
              	alert("please type in the node name you wanna search")
-             }else {
+             } else {
 
               for (var i = 0; i < list.length; i++) {
 
@@ -99,7 +99,7 @@ window.onload=function(){
                      key++;
                      foundList.push(list[i])
                      } 
-              }      	
+                }      	
              }
 
 		}
@@ -134,16 +134,16 @@ window.onload=function(){
              for (i = 0,len = nodeValue.length; i < len; i++) {
              	
 
-          if (nodeValue[i]&&clickNode != null) {
-          	 var newNode =document.createElement("div"),
-          	     newText = document.createTextNode(nodeValue[i]);
-          	     newNode.appendChild(newText);
+              if (nodeValue[i]&&clickNode != null) {
+              	 var newNode =document.createElement("div"),
+              	     newText = document.createTextNode(nodeValue[i]);
+              	     newNode.appendChild(newText);
 
-          	  clickNode.appendChild(newNode);
-          }else{
-          	alert("请输入节点名并选择要插入的节点")
-          }
-          }
+              	  clickNode.appendChild(newNode);
+              }else{
+              	alert("请输入节点名并选择要插入的节点")
+              }
+            }
 		}
 		function removeNode(){
           //从数组中删除
